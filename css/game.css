@@ -1,0 +1,121 @@
+body{
+    text-align: center;
+    background-color: black;
+    overflow: hidden;
+}
+
+.progress {
+    display: none;
+    position: absolute;
+    background: #6b1818;
+    color: white;
+    padding: 20px 50px;
+    border-radius: 10px;
+    text-align: center;
+    width: 93%;
+    margin: auto;
+    top: 45%;
+}
+canvas{
+    background-image: url(../img/background.gif);
+    animation: scroll-background linear 5s infinite;
+}   
+
+@keyframes scroll-background 
+{
+    from {
+        background-position-y: 0%;
+    }
+    to {
+        background-position-y: +100%;
+    }
+}
+
+img{
+    width: 40px;
+    height: 30px;
+    position: relative;
+}
+
+.game-btn{
+    background-color: lightgray;
+    color: gray;
+    font-size: 15pt;
+	font-family: 'Press Start 2p';
+	font-weight: bold;
+	text-align: center;
+    text-shadow: -1px -1px black, 1px 1px white;
+
+    width : 8%;
+    height : 5%;
+    border-radius: 7px;
+    box-shadow: 0 .2em gray; 
+    cursor: pointer;
+    
+    position: absolute;
+    display: block;
+    right: 2%;
+	/* margin:5px;
+    padding: 10px 0 10px 10px ; */
+
+}
+
+#pauseBtn{
+    top:30%
+}
+
+#rsetatBtn{
+    top:40%;
+}
+#homeBtn{
+    top:50;
+}
+
+#exitBtn{
+    top:60;
+}
+
+
+.game-btn:active {
+    box-shadow: none;
+    position: absolute;
+    top: .2em;
+    display: block; 
+} 
+.responsive {
+    max-width: 100%;
+    height: auto;
+  }
+
+#gameStatus{
+    color: aqua;
+    height: 20px; 
+    width: 20px; 
+    position: absolute; 
+    text-align: left; 
+    padding: 10px;
+    top: 15%;
+    margin-left: 1%;
+    border-radius: 25px;
+    background-color: rgb(50, 10, 124);
+}
+
+.spacer{
+    height: 50px;
+}
+
+td{
+    padding: 10px;
+    font-size: 15px;
+    z-index: 5;
+    text-align: left;
+    margin:10px;
+}
+
+th{
+    font-size: 20px;
+}
+
+.valued{
+    padding: 5px;
+}
